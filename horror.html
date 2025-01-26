@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Story</title>
+    <link rel="stylesheet" href="horror.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Horror Fate</h1>
+        <p>Select your choices and enter the terrifying world of nightmares.</p>
+
+        <div class="choice-container">
+            <label for="location">Where do you begin your nightmare?</label>
+            <select id="location">
+                <option value="dark_forest">In the Dark Forest</option>
+                <option value="haunted_house">In a Haunted House</option>
+                <option value="abandoned_asylum">In an Abandoned Asylum</option>
+                <option value="graveyard">In the Graveyard</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="creature">Which creature will you encounter?</label>
+            <select id="creature">
+                <option value="ghost">A Ghost</option>
+                <option value="vampire">A Vampire</option>
+                <option value="werewolf">A Werewolf</option>
+                <option value="zombie">A Zombie</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="escape">How will you escape?</label>
+            <select id="escape">
+                <option value="run">Run for your life</option>
+                <option value="fight">Fight back with a weapon</option>
+                <option value="hide">Hide in fear</option>
+                <option value="confront">Confront the creature head-on</option>
+            </select>
+        </div>
+
+        <button id="generate-story-btn" onclick="generateStory()">Generate Story</button>
+    </div>
+
+    <div id="story-section" class="story-section">
+        <h2>Your Horror Story</h2>
+        <div id="story-text"></div>
+        <div id="story-image"></div>
+        <button id="next-btn" onclick="nextPart()">Next Part</button>
+        <button id="play-aloud-btn" onclick="readStoryAloud()">Read Aloud</button>
+        <button id="back-btn" onclick="back()">back to home</button>
+    </div>
+
+    <script src="horror.js"></script>
+</body>
+</html>

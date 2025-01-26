@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Thriller Story</title>
+    <link rel="stylesheet" href="crime.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enter the World of Crime</h1>
+        <p>Select your choices and dive into a dark, thrilling crime story full of twists and turns.</p>
+
+        <div class="choice-container">
+            <label for="detective">What is your role?</label>
+            <select id="detective">
+                <option value="detective">A Veteran Detective</option>
+                <option value="cop">A Rookie Cop</option>
+                <option value="forensic">A Forensic Expert</option>
+                <option value="hacker">A Hacker Helping with the Case</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="crime">What type of crime is it?</label>
+            <select id="crime">
+                <option value="murder">A Gruesome Murder</option>
+                <option value="heist">A High-Stakes Heist</option>
+                <option value="kidnapping">A Dangerous Kidnapping</option>
+                <option value="cybercrime">A Sophisticated Cybercrime</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="twist">What happens next?</label>
+            <select id="twist">
+                <option value="betrayal">You uncover a betrayal within your team</option>
+                <option value="clue">A mysterious clue leads to a hidden secret</option>
+                <option value="chase">You get caught in a high-speed chase</option>
+                <option value="identity">Your own identity is questioned</option>
+            </select>
+        </div>
+
+        <button id="generate-story-btn" onclick="generateStory()">Create My Crime Thriller</button>
+    </div>
+
+    <div id="story-section" class="story-section">
+        <h2>Your Crime Thriller Story</h2>
+        <div id="story-text"></div>
+        <div id="story-image"></div>
+        <button id="next-btn" onclick="nextPart()">Next Part</button>
+        <button id="play-aloud-btn" onclick="readStoryAloud()">Read Aloud</button>
+        <button id="back-btn" onclick="back()">back to home</button>
+    </div>
+
+    <script src="crime.js"></script>
+</body>
+</html>

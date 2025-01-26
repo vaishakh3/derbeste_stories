@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Love Story</title>
+    <link rel="stylesheet" href="mafia.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Mafia Love Story Begins</h1>
+        <p>Choose your path and dive into a world of love, crime, and danger.</p>
+
+        <div class="choice-container">
+            <label for="role">What is your role in the mafia?</label>
+            <select id="role">
+                <option value="boss">The Boss</option>
+                <option value="underboss">The Underboss</option>
+                <option value="enforcer">The Enforcer</option>
+                <option value="hacker">The Hacker</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="love">Who is your forbidden love?</label>
+            <select id="love">
+                <option value="enemy">An Enemy's Daughter</option>
+                <option value="rival">A Rival Mafia Member</option>
+                <option value="betrayal">Your Best Friend's Love</option>
+                <option value="bodyguard">Your Loyal Bodyguard</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="action">How do you confess your love?</label>
+            <select id="action">
+                <option value="dangerous">In a Dangerous Situation</option>
+                <option value="betrayal">By Betraying Your Family</option>
+                <option value="silent">Through a Silent, Intense Stare</option>
+                <option value="gunpoint">Under Gunpoint</option>
+            </select>
+        </div>
+
+        <button id="generate-story-btn" onclick="generateStory()">Create My Mafia Love Story</button>
+    </div>
+
+    <div id="story-section" class="story-section">
+        <h2>Your Mafia Love Story</h2>
+        <div id="story-text"></div>
+        <div id="story-image"></div>
+        <button id="next-btn" onclick="nextPart()">Next Part</button>
+        <button id="play-aloud-btn" onclick="readStoryAloud()">Read Aloud</button>
+        <button id="back-btn" onclick="back()">back to home</button>
+    </div>
+
+    <script src="mafia.js"></script>
+</body>
+</html>

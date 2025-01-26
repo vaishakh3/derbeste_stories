@@ -1,0 +1,150 @@
+body {
+    background-color: #f8f0e3;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    padding: 50px 10px;
+    background-image: url('romantic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #3d1507;
+    margin-bottom: 4px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px rgba(209, 207, 207, 0.5);
+}
+h2 {
+    font-size: 3rem;
+    color: #3d1507;
+    margin-bottom: 4px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px rgba(209, 207, 207, 0.5);
+}
+p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 8px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+label {
+ 
+        font-size: 1.5rem;
+        color: #050100;
+        margin-bottom: 10px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        float: left;
+        margin-left: 30px;
+    
+}
+#detective {
+    font-size: 1rem;
+    color: #050100;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    justify-items: first baseline;
+    margin-left: 30px;
+}
+#twist{
+    font-size: 1rem;
+    color: #050100;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    justify-items: first baseline;
+    margin-left: 30px;
+}
+#crime
+{ font-size: 1rem;
+    color: #050100;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    justify-items: first baseline;
+    margin-left: 30px;
+    
+
+}
+button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    margin: 20px;
+    background-color: #ff7f50;
+    color: white;
+    border:#000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+
+.choice-container {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 90%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+select:focus {
+    border-color: #ff7f50;
+}
+
+#story-section {
+    display: none;
+}
+
+#story-image img {
+    max-width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+#story-text{
+    font-family: "PT Serif", serif;;
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 30px;
+    color: black;
+    padding-left:25px;
+    padding-top: 10px;
+    margin: 10px;
+}
+

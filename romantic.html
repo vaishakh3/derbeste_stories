@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Story</title>
+    <link rel="stylesheet" href="romantic.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Romantic story begins here</h1>
+        <p>Select your choices and let your love story unfold!</p>
+
+        <div class="choice-container">
+            <label for="meeting">How do you meet your soulmate?</label>
+            <select id="meeting">
+                <option value="coffee_shop">At a Cozy Coffee Shop</option>
+                <option value="bookstore">In a Charming Bookstore</option>
+                <option value="beach">On a Beautiful Beach</option>
+                <option value="art_gallery">At an Art Gallery</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="first_date">Where is your first date?</label>
+            <select id="first_date">
+                <option value="picnic">A Romantic Picnic in the Park</option>
+                <option value="rooftop">A Dinner on a Rooftop</option>
+                <option value="museum">A Walk through a Museum</option>
+                <option value="starlight">Stargazing by the Beach</option>
+            </select>
+        </div>
+
+        <div class="choice-container">
+            <label for="confession">How does the confession happen?</label>
+            <select id="confession">
+                <option value="sweet_texts">Through Sweet Love Letters</option>
+                <option value="heartfelt_words">With Heartfelt Words</option>
+                <option value="unexpected_kiss">An Unexpected, Magical Kiss</option>
+                <option value="romantic_song">Singing a Romantic Song</option>
+            </select>
+        </div>
+
+        <button id="generate-story-btn" onclick="generateStory()">Create My Story</button>
+    </div>
+
+    <div id="story-section" class="story-section">
+        <h2>Your Romantic Story</h2>
+        <div id="story-text"></div>
+        <div id="story-image"></div>
+        <button id="next-btn" onclick="nextPart()">Next Part</button>
+        <button id="play-aloud-btn" onclick="readStoryAloud()">Read Aloud</button>
+        <button id="back-btn" onclick="back()">back to home</button>
+    </div>
+
+    <script src="romantic.js"></script>
+</body>
+</html>
